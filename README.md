@@ -1,4 +1,4 @@
-# dds
+# DDD
 
 - Patterns on how to reduce and manage the complexity in the software when(or before) developing the system. These patterns are not all technical but also strategic. Some of these are: how to communicate with business analysts, how to cooperate and integrate with other development teams.
 
@@ -32,3 +32,51 @@
 
 - Made for specific business domain and compatable with business strategy. Ex: a software you made now serves with certain channels, but strategically these channels will be increased to serve variety of customers in the coming years. If our design does not support these channels, the design will fail.
 
+## DDD in Short
+
+### DDD is About
+
+- Discussion with the business
+- Listening the business
+- Understanding the business
+- Discovering the business
+- Generating value to the business
+
+### DDD is Not About
+
+- Software development methodology
+- Software architecture
+- Technology
+- Hardware
+
+## DDD Tools
+
+DDD is a design process:
+    - input: business requirements,
+    - everyone works on it,
+    - a model is created from business requirements by using DDD patterns/tools,
+    - output: design/model.
+    - The output lets developers to reflect design to the code.
+
+### Strategic Design
+
+- Contains tool sets to form solutions to business requirements. Thus must be done before tactical design.
+
+- Bounded context
+  - Explicit context boundry within in which a ubiquitous language is modeled. "Account" in banking context refers to bank account, but in literary context it can be a library account, email account etc.
+  - Important because when swithing between different contexts.
+  - Domain experts
+- Ubiquotious language
+  - language used in requirement document, scenarios, cases. Language shared by the team, developers, domain experts, and other participants so that there are no ambiguity. This ubiquotious language will be directly reflected to the code.
+  - Every bounded context might have its own ubiquotious language.
+  - Can contain: concepts, actions, constraints, personas.
+- Context mapping
+- Sub domains
+
+### Tactical Design
+
+- The part where developers reflect the model/design to the code. If the design is faulty, the code will be faulty.
+- Aggregates
+- Entities
+- Value objects
+- Domain events
